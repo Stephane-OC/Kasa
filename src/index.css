@@ -1,0 +1,307 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+    font-family: 'Montserrat';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.main {
+    max-width: 90%;
+    margin: auto;
+}
+
+h2 {
+    max-width: 40%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.section-header,
+h2 {
+    color: #FF6060;
+}
+
+.content {
+    margin-bottom: 2rem;
+}
+
+
+/***************** Header *****************/
+.App-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto 2rem auto;
+    max-width: 90%;
+}
+
+.kasa-logo {
+    max-width: 35vw;
+}
+
+#nav-items {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #FF6060;
+}
+
+li {
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/***************** Banner *****************/
+.bannerWrapper1 {
+    height: 17rem;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bannerWrapper2 {
+    margin: auto;
+    height: 17rem;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 90%;
+}
+
+#bannerContent {
+    margin: auto;
+    height: 14rem;
+    filter: brightness(60%);
+}
+
+.bannerHeading {
+    position: relative;
+    text-align: center;
+    bottom: 10rem;
+    font-size: 3rem;
+    font-weight: 100;
+    color: white;
+}
+
+.bannerStyleOne {
+    border-radius: 25px;
+    background-image: url('./assets/img/banner_1.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.bannerStyleTwo {
+    border-radius: 25px;
+    background-image: url('./assets/img/banner_2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/***************** Dropdown *****************/
+.dropdown-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto 4rem auto;
+}
+
+.about {
+    align-items: center;
+    margin: auto;
+    flex-direction: column;
+    z-index: 10;
+
+}
+
+.about>div {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    z-index: -10;
+}
+
+.dropdown-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    color: white;
+    background-color: #FF6060;
+    border-radius: 10px;
+    height: 46px;
+    vertical-align: middle;
+}
+
+.dropdown-nav img {
+    width: 2rem;
+    margin-right: 2rem;
+
+}
+
+.dropdown-element {
+    max-width: 75%;
+    overflow: hidden;
+}
+
+.dropdown-heading {
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+.dropdown-details {
+    padding: 1rem;
+    margin-top: -0.5em;
+    color: #FF6060;
+    background-color: #F6F6F6;
+}
+
+.dropdown-details li {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    font-size: 1rem;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+/***************** Cards *****************/
+
+.housingContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 2rem auto;
+    padding-top: 2rem;
+    background-color: #F6F6F6;
+    border-radius: 25px;
+}
+
+.housingCard img {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 342px;
+    max-width: 342px;
+}
+
+figcaption {
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    bottom: 5rem;
+    background-color: rgba(000, 000, 000, 0.7)
+}
+
+.housingTitle {
+    color: rgba(255, 255, 255, 0.767);
+    padding-top: 0.5rem;
+    height: 3.2rem;
+    margin-left: 1rem;
+    max-width: 220px;
+}
+
+/***************** Footer *****************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+    background-color: black;
+}
+
+.logo_footer {
+    margin-top: 3rem;
+    width: 8rem;
+}
+
+.copyrights {
+    color: white;
+    max-width: 100%;
+}
+
+@media screen and (max-width:768px) {
+
+    .infos {
+        flex-direction: column;
+    }
+
+    /***************** Header *****************/
+    li {
+        font-size: 1rem;
+    }
+
+    /***************** Banner *****************/
+    .bannerHeading {
+        width: 100%;
+        text-align: start;
+        font-size: 2.4rem;
+        margin-left: 2rem;
+    }
+
+    .bannerWrapper1 {
+        height: 12rem;
+        border-radius: 25px;
+        overflow: hidden;
+        margin-bottom: 1em;
+    }
+
+    .bannerWrapper2 {
+        height: 17rem;
+        border-radius: 25px;
+        overflow: hidden;
+        margin-bottom: 1.6em;
+    }
+
+    #bannerContent {
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .bannerStyleTwo {
+        background-position: center;
+        background-image: url('./assets/img/banniere_2.png');
+
+    }
+
+    /***************** Dropdown *****************/
+    .dropdown-container {
+        flex-direction: column;
+    }
+
+    .dropdown-element {
+        margin-bottom: 2rem;
+        max-width: 90%;
+    }
+
+    /***************** Tags *****************/
+    .tag-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .main {
+        max-width: 100%;
+        margin: auto;
+    }
+}
