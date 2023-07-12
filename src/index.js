@@ -1,21 +1,25 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import Accueil from './pages/Accueil';
 import Logement from './pages/Logement'
-import APropos from './pages/About';
+import About from './pages/About';
+import Header from './components/header';
+import Footer from './components/footer';
 import './index.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Accueil/>} />
-        <Route path="/A_Propos" element={<APropos/>} />
+        <Route path="/A_Propos" element={<About/>} />
         <Route path="/location/:id" element={<Logement/>} />
       </Routes>
+      <Footer/>
     </Router>
   </React.StrictMode>
 );
