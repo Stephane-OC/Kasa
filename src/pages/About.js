@@ -4,7 +4,7 @@ import '../index.css';
 
 function About() {
     return (
-      <div>
+      <div className="main">
         <Banner className="bannerStyleTwo" />
         <div className='content'>
             <div className='dropdown-container about'>
