@@ -5,6 +5,7 @@ import Logement from './pages/Logement'
 import About from './pages/About';
 import Header from './components/header';
 import Footer from './components/footer';
+import Error from './pages/PageError';
 import './index.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
@@ -18,6 +19,7 @@ root.render(
         <Route path="/" element={<Accueil/>} />
         <Route path="/A_Propos" element={<About/>} />
         <Route path="/location/:id" element={<Logement/>} />
+        <Route path="*" element={<Error/>}/>
       </Routes>
       <Footer/>
     </Router>

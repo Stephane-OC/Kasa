@@ -1,9 +1,8 @@
 import React from "react";
 import Banner from "../components/banner"
 import Card from "../components/card"
-import { fetchAllHousings } from "../services/dataService";
+import { getAllHousings } from "../services/dataService";
 import { useState, useEffect } from "react";
-
 
 import "../index.css";
 
@@ -12,7 +11,7 @@ function Accueil() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetchAllHousings()
+    getAllHousings()
       .then((data) => {
         setIsLoading(false);
         setCards(data);
@@ -21,7 +20,6 @@ function Accueil() {
 
   return (
     <div>
-      
       {!isLoading && (
         <div className="main">
           <Banner className="bannerStyleOne" title="Chez vous, partout et ailleurs" />
