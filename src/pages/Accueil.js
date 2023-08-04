@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../components/banner"
-import Card from "../components/card"
+import Banner from "../components/banner";
+import Card from "../components/card";
 import { getAllHousings } from "../services/dataService";
 import { useState, useEffect } from "react";
 
@@ -11,18 +11,18 @@ function Accueil() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    getAllHousings()
-      .then((data) => {
-        setIsLoading(false);
-        setCards(data);
-      });
+    setIsLoading(false);
+    setCards(getAllHousings());
   }, []);
 
   return (
     <div>
       {!isLoading && (
         <div className="main">
-          <Banner className="bannerStyleOne" title="Chez vous, partout et ailleurs" />
+          <Banner
+            className="bannerStyleOne"
+            title="Chez vous, partout et ailleurs"
+          />
           <div className="housingContainer">
             {cards.map((card) => (
               <Card key={card.id} card={card} />

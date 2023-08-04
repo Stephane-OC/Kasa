@@ -1,21 +1,21 @@
 import logements from '../data/logements.json';
 
 
-/* "getAllHousings" is a function that returns a Promise which is resolved with  entire list of housings.             **
-** This function simulates an asynchronous operation, such as a network request to fetch data from a server.          **
-** In reality, it just returns a Promise that is immediately resolved with data imported from 'logements.json' file.  */
+/* "getAllHousings" is a function that returns entire list of housings.                 **
+** Instead of simulating an asynchronous operation, it directly returns data imported from  **
+** 'logements.json' file. This function is used to retrieve all housing data available.  */
+
 
 export function getAllHousings() {
-  return new Promise((resolve, reject) => {
-    resolve(logements);
-  });
+  return logements;
 }
 
-/* "getHousingById" is a function that accepts an ID of a housing as a parameter and            **
-** returns corresponding housing object from 'logements.json' data.                             **
-** This function uses Array 'find' method to search through 'logements' array and               **
-** returns first element that satisfies provided testing function.                              **
-** Here, testing function checks if 'id' property of a housing object is equal to provided ID.  */
+/* "getHousingById" is a function that accepts an ID of housing as a parameter and     **
+** returns corresponding housing object from 'logements.json' data.                    **
+** Function uses Array 'find' method to search through 'logements' array and           **
+** returns first element that satisfies provided testing function.                     **
+** Here, testing function checks if 'id' property of a housing object is equal to      **
+** provided ID. Function is used to fetch details of specific housing based on its ID. */
 
 export function getHousingById(id) {
   return logements.find((housing) => housing.id === id);

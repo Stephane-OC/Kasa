@@ -3,19 +3,19 @@ import { NavLink } from "react-router-dom";
 import "./header.css";
 
 
-/* "Header" is a React functional component that represents navigation bar at top of webpage.   **
+/* "Header" is a React functional component that represents navigation bar at top of webpage. **
 **
-** It contains two main parts:                                                                  **
-**  - A logo, which is displayed as an image and doesn't link to any other page.                **
-**  - A navigation menu, which is composed of two links: "Accueil" and "A Propos".              **
+** It contains two main parts:                                                                **
+**  - A logo, which is displayed as an image and doesn't link to any other page.              **
+**  - A navigation menu, which is composed of two links: "Accueil" and "A Propos".            **
 **   These links lead to different parts of website.  
 **
-** The component uses "NavLink" component from "react-router-dom" to create navigational links. **
-** When a link is active (i.e., current location matches path of link), link is underlined.     **
-** This is done by dynamically applying a style to link based on whether it is active or not.   **
+** Component uses "NavLink" component from "react-router-dom" to create navigational links.   **
+** When a link is active (i.e., current location matches path of link), link is underlined.   **
+** This is done by dynamically applying a style to link based on whether it is active or not. **
 **
-** The component does not receive any props and does not maintain any internal state.           **
-** The content and layout of header are hard-coded within component.                            */
+** Component does not receive any props and does not maintain any internal state.             **
+** Content and layout of header are hard-coded within component.                              */
 
 function Header() {
     let activeStyle = {

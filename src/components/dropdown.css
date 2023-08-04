@@ -15,6 +15,9 @@
     margin-bottom: 1.5rem;
 }
 
+.rent > div{
+    width: 45%;
+}
 .dropdown-nav {
     display: flex;
     justify-content: space-between;
@@ -78,5 +81,8 @@ ul {
     .dropdown-element {
         margin-bottom: 2rem;
         max-width: 90%;
+    }
+    .rent > div{
+        width: 100%;
     }
 }
