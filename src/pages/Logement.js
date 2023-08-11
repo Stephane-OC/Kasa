@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import Carrousel  from '../components/carrousel'
 import { getHousingById } from "../services/dataService";
 import Dropdown from "../components/dropdown";
 import RentTag from "../components/rentTag";
@@ -65,7 +66,7 @@ function Logement() {
     <>
       {data && (
         <div className="main">
-        
+        <Carrousel  pictures={data.pictures}/>
         <section className='info-container'>
             <article className='section-header'>
                 <h1 className='rent-title'>{data.title}</h1>
