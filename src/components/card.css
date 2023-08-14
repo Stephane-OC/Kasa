@@ -8,11 +8,16 @@
     border-radius: 25px;
 }
 
+.housingCard {
+    
+    margin-bottom: -4em;
+}
+
 .housingCard img {
     object-fit: cover;
     border-radius: 10px;
     height: 342px;
-    max-width: 342px;
+    width: 342px;
 }
 
 figcaption {
@@ -28,4 +33,33 @@ figcaption {
     height: 3.2rem;
     margin-left: 1rem;
     max-width: 220px;
+}
+
+@media screen and (max-width:768px) {
+
+    .housingContainer {
+
+        justify-content: center;
+        margin-top: 0em;
+        margin-right: 0em;
+        padding-top: 2rem;
+        background-color: #F6F6F6;
+        border-radius: 25px;
+    }
+
+    .housingCard {
+        width: 100%;
+        margin-top: -2em;
+        margin-bottom: -4em;
+    }
+
+    .housingCard img {
+        object-fit: cover;
+        border-radius: 10px;
+        height: 342px;
+        width: 100%;
+        margin: 0em;
+    }
+
+
 }

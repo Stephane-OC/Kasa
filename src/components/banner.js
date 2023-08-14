@@ -19,4 +19,4 @@ function Banner({ className, title }) {
   );
 }
 
-export default Banner;
+export default Banner; 

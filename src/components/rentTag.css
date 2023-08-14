@@ -15,4 +15,7 @@
     .tag-wrapper{
         flex-wrap: wrap;
     }
+    .tag{
+        border-radius: 10px;
+    }
 }

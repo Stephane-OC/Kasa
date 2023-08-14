@@ -76,6 +76,7 @@ ul {
 @media screen and (max-width:768px) {
     .dropdown-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .dropdown-element {

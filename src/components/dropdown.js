@@ -26,7 +26,6 @@ function Dropdown(props) {
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen); // log the state
 }; 
 
   return (
