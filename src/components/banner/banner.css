@@ -30,14 +30,14 @@
 
 .bannerStyleOne {
     border-radius: 25px;
-    background-image: url('../assets/img/banner_1.png');
+    background-image: url('../../assets/img/banner_1.png');
     background-size: cover;
     background-position: center;
 }
 
 .bannerStyleTwo {
     border-radius: 25px;
-    background-image: url('../assets/img/banner_2.png');
+    background-image: url('../../assets/img/banner_2.png');
     background-size: cover;
     background-position: center;
 }
@@ -81,6 +81,6 @@
 
     .bannerStyleTwo {
         background-position: center;
-        background-image: url('../assets/img/banniere_2.png');
+        background-image: url('../../assets/img/banniere_2.png');
     }
 }

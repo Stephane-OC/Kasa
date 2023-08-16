@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./card.css";
+import "../cards/card.css";
 
 /* "Card" is a React functional component that generates a linkable card in application.                      **
 ** It accepts a `props` object that contains following property:                                              **

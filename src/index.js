@@ -3,8 +3,8 @@ import { createRoot } from 'react-dom/client';
 import Accueil from './pages/Accueil';
 import Logement from './pages/Logement'
 import About from './pages/About';
-import Header from './components/header';
-import Footer from './components/footer';
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 import Error from './pages/PageError';
 import './index.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'

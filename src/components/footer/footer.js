@@ -1,8 +1,8 @@
 import React from "react";
 
-import logoFooter from "../assets/logo/footer_logo.png";
+import logoFooter from "../../assets/logo/footer_logo.png";
 
-import "./footer.css";
+import "../footer/footer.css";
 
 /* "Footer" is a React functional component that represents footer of webpage.        **
 **

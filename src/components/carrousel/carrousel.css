@@ -13,6 +13,7 @@
   .caroussel-img-counter{
     text-align: center;
     color: white;
+    margin: -7em;
   }
   .caroussel-nav{
     justify-content: space-between;
@@ -24,6 +25,7 @@
   .caroussel-nav img{
     max-width: 46px;
   }
+
   @media screen and (max-width: 768px) {
     .caroussel-container{
       width: 90%;

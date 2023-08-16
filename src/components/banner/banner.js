@@ -1,6 +1,5 @@
 import React from "react";
 import "./banner.css";
-
 /*"Banner" is a React functional component that generates a banner in your application.                             **
 ** It accepts a `props` object that contains following properties:                                                  **
 **    

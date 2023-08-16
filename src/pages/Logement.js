@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Carrousel  from '../components/carrousel'
+import Carrousel  from '../components/carrousel/carrousel'
 import { getHousingById } from "../services/dataService";
-import Dropdown from "../components/dropdown";
-import RentTag from "../components/rentTag";
+import Dropdown from "../components/dropdown/dropdown";
+import RentTag from "../components/rentTag/rentTag";
+import Rating from "../components/rating/rating";
 import "../index.css";
-import solidStar from "../assets/img/star-solid.svg";
-import blankStar from "../assets/img/star-empty.svg";
 
  /* "Logement" is a React functional component responsible for displaying detailed information              **
  ** about a specific housing location.                                                                      **
@@ -36,32 +35,6 @@ function Logement() {
     }
   }, [id, navigate]);
 
-  /* "Rating" is a React functional component that displays a visual rating using stars.                    **
-  ** It receives a single prop:                                                                             **
-  ** - "rating", which is a numeric value between 0 and 5. It represents rating to be displayed.            **
-  *
-  * Component maps over an array of 5 elements, rendering an image of a solid star for each                 **
-  * point in rating, and a blank star for remaining points.                                                 **
-  *
-  * Each star's image is determined based on whether rating is greater than or equal to current index + 1.  **
-  * If it is, a solid star image is used; otherwise, a blank star image is used.                            **
-  *
-  * Alt text for each image includes host's name and word "rating". 
-  *                                         */
-  function Rating({ rating }) {
-    return (
-      <>
-        {[...Array(5)].map((_, index) => (
-          <img
-            key={index}
-            src={rating >= index + 1 ? solidStar : blankStar}
-            alt={`${data.host.name} rating`}
-          />
-        ))}
-      </>
-    );
-  }
-
   return (
     <>
       {data && (
@@ -81,7 +54,7 @@ function Logement() {
                     <img className='owner-picture' src={data.host.picture} alt={data.host.name}/>
                 </div>
                 <div className='rating'>
-                    {<Rating rating={data.rating}/>}
+                    {<Rating rating={data.rating} hostName={data.host.name}/>}
                 </div>
             </div>
         </section>

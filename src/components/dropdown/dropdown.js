@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import chevronUp from "../assets/img/chevron-up.svg";
-import chevronDown from "../assets/img/chevron-down.svg";
-import "./dropdown.css";
+import chevronUp from "../../assets/img/chevron-up.svg";
+import chevronDown from "../../assets/img/chevron-down.svg";
+import "../dropdown/dropdown.css";
 
 /* "Dropdown" is a React functional component that displays a dropdown menu. The component receives **
  * its content, title and associated onClick action through its props. The dropdown visibility is   **

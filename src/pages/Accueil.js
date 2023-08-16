@@ -1,6 +1,6 @@
 import React from "react";
-import Banner from "../components/banner";
-import Card from "../components/card";
+import Banner from "../components/banner/banner";
+import Card from "../components/cards/card";
 import { getAllHousings } from "../services/dataService";
 import { useState, useEffect } from "react";
 
