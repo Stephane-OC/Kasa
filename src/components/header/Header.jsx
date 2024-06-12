@@ -1,6 +1,6 @@
 import logo from "../../assets/logo/logo.png";
 import { NavLink } from "react-router-dom";
-import "./header.css";
+import "./Header.css";
 
 
 /* "Header" is a React functional component that represents navigation bar at top of webpage. **

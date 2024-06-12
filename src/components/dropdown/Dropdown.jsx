@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import PropTypes from 'prop-types';
+import { useState } from "react";
 import chevronUp from "../../assets/img/chevron-up.svg";
 import chevronDown from "../../assets/img/chevron-down.svg";
-import "../dropdown/dropdown.css";
+import "./Dropdown.css";
 
 /* "Dropdown" is a React functional component that displays a dropdown menu. The component receives **
  * its content, title and associated onClick action through its props. The dropdown visibility is   **
@@ -19,14 +20,17 @@ import "../dropdown/dropdown.css";
  * Depending on title of dropdown, content can be a list (if title is 'Equipements')                **
  * or a paragraph (for any other title).                                                            */
 
-function Dropdown(props) {
-  const content = props.content;
-  const title = props.title;
-  const [isOpen, setIsOpen] = useState(false); 
+function Dropdown({ content, title }) {
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
-}; 
+  };
+
+  /* "formatCounter" is a utility function that formats current image index and total images for display.   **
+  ** This function is primarily designed to provide a visual representation of current position of an image **
+  ** in a series, which is particularly useful for image carousel components where knowing current position **
+  ** of an image relative to entire collection is beneficial for end user.                                  */
 
   return (
     <div className='dropdown-element'>
@@ -40,5 +44,13 @@ function Dropdown(props) {
     </div>
   )
 }
+
+Dropdown.propTypes = {
+  content: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.string),
+    PropTypes.string,
+  ]).isRequired,
+  title: PropTypes.string.isRequired,
+};
 
 export default Dropdown;

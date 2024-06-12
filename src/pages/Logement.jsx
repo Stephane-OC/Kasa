@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import Carrousel  from '../components/carrousel/carrousel'
+import Carrousel  from '../components/Carrousel/Carrousel'
 import { getHousingById } from "../services/dataService";
-import Dropdown from "../components/dropdown/dropdown";
-import RentTag from "../components/rentTag/rentTag";
-import Rating from "../components/rating/rating";
+import Dropdown from "../components/Dropdown/Dropdown";
+import RentTag from "../components/RentTag/RentTag";
+import Rating from "../components/Rating/Rating";
 import "../index.css";
 
  /* "Logement" is a React functional component responsible for displaying detailed information              **

@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+# Kasa
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📚 Table of Contents
 
-## Available Scripts
+- [🇺🇸 English](#-english)
+  - [Introduction](#introduction)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Project Overview](#project-overview)
+  - [License](#license)
+- [🇫🇷 Français](#-français)
+  - [Introduction](#introduction-1)
+  - [Installation](#installation-1)
+  - [Usage](#usage-1)
+  - [Aperçu du Projet](#aperçu-du-projet)
+  - [License](#license-1)
 
-In the project directory, you can run:
+## 🇺🇸 English
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Kasa is a web application that allows users to view and book rental properties. The application is built using React and includes various components to display property details, ratings, tags, and more.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Installation
 
-### `npm run build`
+### 1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+    git clone https://github.com/Stephane-OC/Kasa.git
+    cd kasa
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Install the dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+   npm install
+```
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+   npm run dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Project Overview
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Technologies Used
 
-## Learn More
+* Front-end : React, React Router, Vite
+* Styling : CSS, CSS Modules
+* State Management : useState, useEffect
+* Routing : React Router
+* Icons and Images : SVG, PNG
+* Mock Data : JSON
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Key Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Responsive Design : The application follows responsive design principles and adapts to different screen sizes.
+* Component-based Architecture : Built using reusable React components.
+* Routing : Client-side routing with React Router for seamless navigation.
+* Interactive UI : Features like carousels, dropdowns, and dynamic ratings.
+* Mock Data Integration : Uses a JSON file to simulate backend data.
 
-### Code Splitting
+### Competencies Developed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Front-end Development : Creating and managing React components.
+* State Management : Using React hooks for state and side effects.
+* Responsive Web Design : Implementing responsive design techniques.
+* Client-side Routing : Setting up and managing routes using React Router.
+* Code Quality : Writing clean, maintainable code with proper prop-types validation.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
+s
 
-### Making a Progressive Web App
+## fr Français
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Introduction
 
-### Advanced Configuration
+Kasa est une application web qui permet aux utilisateurs de consulter et de réserver des biens locatifs. L'application est construite avec React et inclut divers composants pour afficher les détails des propriétés, les évaluations, les tags, et plus encore.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Installation
 
-### Deployment
+### 1. Clonez le dépôt :
+```bash
+   git clone https://github.com/Stephane-OC/Kasa.git
+   cd kasa
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### 2. Installez les dépendances :
+```bash
+   npm install
+```
 
-### `npm run build` fails to minify
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Démarrez le serveur de développement :
+
+```bash
+   npm run dev
+```
+
+## Aperçu du Projet
+
+### Technologies Utilisées
+
+* Front-end : React, React Router, Vite
+* Stylisation : CSS, Modules CSS
+* Gestion d'État : useState, useEffect
+* Routage : React Router
+* Icônes et Images : SVG, PNG
+* Données Simulées : JSON
+
+### Fonctionnalités Clés
+
+* Design Réactif : L'application suit les principes de design réactif et s'adapte à différentes tailles d'écran.
+* Architecture Basée sur les Composants : Construite en utilisant des composants réutilisables de React.
+* Routage : Routage côté client avec React Router pour une navigation fluide.
+* Interface Utilisateur Interactive : Fonctionnalités comme les carrousels, les menus déroulants, et les évaluations dynamiques.
+* Intégration de Données Simulées : Utilise un fichier JSON pour simuler les données du backend.
+
+### Compétences Développées
+
+* Développement Front-end : Création et gestion des composants React.
+* Gestion d'État : Utilisation des hooks de React pour la gestion de l'état et des effets secondaires.
+* Design Web Réactif : Mise en œuvre des techniques de design réactif.
+* Routage Côté Client : Configuration et gestion des routes en utilisant React Router.
+* Qualité du Code : Écriture d'un code propre et maintenable avec une validation appropriée des prop-types.
+
+## License
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE](./LICENSE) pour plus de détails.

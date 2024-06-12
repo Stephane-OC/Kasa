@@ -1,7 +1,6 @@
-import React from "react";
+import PropTypes from 'prop-types';
 import { Link } from "react-router-dom";
-
-import "../cards/card.css";
+import "./Card.css";
 
 /* "Card" is a React functional component that generates a linkable card in application.                      **
 ** It accepts a `props` object that contains following property:                                              **
@@ -15,8 +14,7 @@ import "../cards/card.css";
 ** `id` from `card` prop to generate a unique path. Inside `Link` component, a `figure`                       **
 ** is created with an `img` and a `figcaption` that displays card's title.                                    */
 
-function Card(props) {
-  const card = props.card;
+function Card({ card }) {
   return (
     <div key={card.id} className="housingCard">
       <Link to={"/location/" + card.id}>
@@ -30,5 +28,13 @@ function Card(props) {
     </div>
   );
 }
+
+Card.propTypes = {
+  card: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default Card;

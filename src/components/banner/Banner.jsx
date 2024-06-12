@@ -1,6 +1,7 @@
-import React from "react";
-import "./banner.css";
-/*"Banner" is a React functional component that generates a banner in your application.                             **
+import PropTypes from 'prop-types';
+import "./Banner.css";
+
+/* "Banner" is a React functional component that generates a banner in your application.                             **
 ** It accepts a `props` object that contains following properties:                                                  **
 **    
 ** - `className`: a CSS class that will be applied to inner div element.                                            **
@@ -18,4 +19,9 @@ function Banner({ className, title }) {
   );
 }
 
-export default Banner; 
+Banner.propTypes = {
+  className: PropTypes.string,
+  title: PropTypes.string,
+};
+
+export default Banner;

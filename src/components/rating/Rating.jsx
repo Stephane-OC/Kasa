@@ -1,5 +1,5 @@
-import React from 'react';
-import "../rating/rating.css";
+import PropTypes from 'prop-types';
+import "./Rating.css";
 import solidStar from "../../assets/img/star-solid.svg";
 import blankStar from "../../assets/img/star-empty.svg";
 
@@ -24,5 +24,10 @@ function Rating({ rating, hostName }) {
         </>
     );
 }
+
+Rating.propTypes = {
+    rating: PropTypes.number.isRequired,
+    hostName: PropTypes.string.isRequired,
+};
 
 export default Rating;

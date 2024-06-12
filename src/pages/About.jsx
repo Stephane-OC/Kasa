@@ -1,5 +1,5 @@
-import Banner from '../components/banner/banner';
-import Dropdown from '../components/dropdown/dropdown';
+import Banner from '../components/Banner/Banner';
+import Dropdown from '../components/Dropdown/Dropdown';
 import '../index.css';
 
 function About() {

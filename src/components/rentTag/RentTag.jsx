@@ -1,4 +1,5 @@
-import "./rentTag.css";
+import PropTypes from 'prop-types';
+import "./RentTag.css";
 
 /* "RentTag" is a React functional component that represents a single tag for a rental property.    **
 **                                                                                                  **
@@ -18,5 +19,9 @@ function RentTag({ tag }) {
         </div>
     );
 }
+
+RentTag.propTypes = {
+    tag: PropTypes.string.isRequired,
+};
 
 export default RentTag;
